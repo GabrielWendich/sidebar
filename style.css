@@ -1,0 +1,141 @@
+/* https://www.figma.com/file/50EKHX2nf5RMmDqZyBPaxZ/DD-%2F-Sidebar-Responsiva-(Copy)?node-id=0%3A1 */
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: var(--light-grey);
+}
+
+nav {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  width: 15.625rem;
+  height: 100vh;
+  background-color: var(--green);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: all ease .4s
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+#nav-header, li{
+  display: flex;
+  box-sizing: border-box;
+
+  width: 88.8%;
+  height: 3.1825rem;
+  margin: 0 .875rem;
+  padding: .8125rem;
+
+  align-items: center;
+  justify-content: start;
+}
+#nav-header{
+  gap: 7.4375rem;
+  margin-top: 1.625rem
+}
+li {
+  list-style-type: none;
+  gap: .8125rem;
+  border-radius: 12px;
+}
+
+
+#menu-button, #logout {
+  border: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  box-shadow: none;
+  border-radius: 5px;
+}
+#menu-button{
+  background-color: var(--green)
+}
+#logout{
+  background-color: var(--light-green);
+}
+
+#menu-button:hover, li:hover {
+  background-color: var(--light-green);
+  transition-duration: .5s;
+}
+#logout:hover {
+  background-color: var(--green);
+  transition-duration: .5s;
+}
+
+
+
+#user-info{
+  width: 100%;
+  height: 3.75rem;
+  padding: .4375rem .875rem;
+  background-color: var(--light-green);
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#user-text {
+  width: 8.5rem;
+  line-height: 0;
+}
+
+#name{
+  font-size: .9375rem;
+}
+
+#profession{
+  font-size: .75rem;
+}
+
+#user-photo {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+header h1 {
+  margin: 1.125rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.5625rem;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.altWidth {
+  width: 64.1%;
+}
+
+.altNav {
+  width: 4.875rem;
+}
+
+.altLogout {
+  justify-content: center !important;
+}
